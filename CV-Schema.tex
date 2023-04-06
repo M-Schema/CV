@@ -2,21 +2,184 @@
 
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc} 
-%\usepackage{tgpagella}
-\usepackage{fontspec}
-\setmainfont[Mapping=text-tex]{Calibri}
-% \usepackage{blindtext}
-\usepackage[margin=3cm]{geometry}
+
+\usepackage{tgpagella}
+%\usepackage{XeTeX.sty}
+%\usepackage{LuaTeX}
+%\usepackage{fontspec}
+%\setmainfont{Calibri}%[Mapping=text-tex]
+%\IfFontExistsTF{Times New Roman}{T}{F}
+
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    %margin=3cm,
+    left=20mm,
+    %right=,
+    %bottom=,
+    top=15mm
+}
+\pagestyle{empty}
+
+\usepackage{sectsty}
+\sectionfont{%                        
+    \large % make sections smaller
+    \fontfamily{qag}\selectfont % change font family
+    \sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
+}
+
+\usepackage{blindtext}
+\newlength{\spacebox}
+\settowidth{\spacebox}{123456789}
+\newcommand{\sepspace}{\vspace*{1em}}
+
+% name
+\newcommand{\name}[1]{
+\Huge % font size
+\fontfamily{phv}\selectfont % font family
+% print name centered and bold
+\begin{center} \textbf{#1} \end{center}\par
+% back to normal size and font
+\normalsize\normalfont}
+
+% motto
+\newcommand{\motto}[1]{
+  \large % font size
+  \fontfamily{phv}\selectfont % font family
+% print motto centered and slanted
+  \begin{center} \textsl{#1}\end{center}\par
+% back to normal size and font
+  \normalsize \normalfont}
+
+% personal information
+\newcommand{\info}[2]{
+% set specific indentation for personal information
+  \noindent\hangindent=2em\hangafter=0
+% create a box to align two pieces of text
+  \parbox{\spacebox}{%
+  \textsl{#1}} % slanted entry name
+  #2 \par} % entry value
+
+% skill
+\newcommand{\skill}[2]{
+% set specific indentation for personal information
+\noindent\hangindent=2em\hangafter=0
+% create a box to align two pieces of text
+\parbox{3\spacebox}{% three times larger box
+\textsc{#1}} % small caps entry name
+#2 \par} % entry value
+
+% language level
+\newcommand{\lan}[2]{
+    % set specific indentation for personal information
+    \noindent\hangindent=2em\hangafter=0
+    % create a box to align two pieces of text
+    \parbox{\spacebox}{%
+        \textbf{#1}} % bold font entry name
+     #2 \par}    % entry value
+
+
+% education entry
+\newcommand{\education}[4]{
+
+% name of the studies
+  \noindent  \textbf{#1}
+  % at the right the duration
+    \hfill 
+    \framebox{% duration inside a frame box
+    \parbox{6em}{%
+    \centering\textbf{#2}}} \par
+ % new paragraph with the school in italics
+     \noindent \textit{#3} \par
+     % description with no hanging and in smaller text
+     \vspace*{0.5em}
+     \noindent\hangindent=2em\hangafter=0 \small #4 
+%back to normal size
+\normalsize \par}
+
+% work experience
+
+\newcommand{\work}[4]{
+% name of the work
+  \noindent  \textbf{#1}
+% at the right the duration
+  \hfill 
+\framebox{% duration inside a frame box
+  \parbox{6em}{%
+  \centering\textbf{#2}}} \par
+% new paragraph with the school in italics
+  \noindent \textit{#3} \par
+% description with no hanging and in smaller text
+  \vspace*{0.5em}
+  \noindent\hangindent=2em\hangafter=0 \small #4 
+%back to normal size
+\normalsize \par}
+
 
 \title{\bfseries\Huge Michael Schema}
-\author{MichaelSchema@posteo.de}
-\date{2023\-04}
+\author{MichaelSchema posteo.de}    %\let\Author\@author
+\date{2023-04}                      %\let\Date\@date
+\makeatother
+
 \begin{document}
 
-    \maketitle
+% name and motto
+\name{ x }
+%@author
+\vspace*{-10pt}
+\motto{Work is my motivation}
 
-test
-testsd \newline
-sd
+% personal information
+\sepspace
+\info{Email}{\texttt{MichaelSchema@posteo.de}} 
+%\Author
+\info{Phone}{+31 415 926 535}
+\info{Address}{Fake Road 123, City 23456, Country}
+
+
+% work experience
+\section*{Work Experience}
+
+\work{Lecturer}{2015--2020}{The XXX University}{\blindtext}
+
+\sepspace
+
+\work{Data Analyist}{2010--2015}{An important tech
+company}{This is a detailed description of the this
+work:
+
+\begin{itemize}
+    \item One thing I did.
+    \item Another thing I did.
+    \item I didn't do much more, sorry.
+\end{itemize}}
+
+
+% education
+\section*{Education}
+
+\education{Master's Degree in Data Analysis}{2009--2010}{My
+Second University}{}
+
+\education{Bachelor's Degree in CS}{2005--2009}{My First
+University}{}
+
+% technical skills
+\section*{Technical skills}
+
+\skill{Programming languages}{\textsc{Python},
+\LaTeX, \textsc{C}}
+\skill{Other}{\textsl{Markdown, Git, Vim, Ubuntu}}
+
+% languages
+\section*{Languages}
+\lan{English}{Native}
+\lan{Spanish}{B2}
+\lan{French}{A2}
+
+
+
+
 
 \end{document}
