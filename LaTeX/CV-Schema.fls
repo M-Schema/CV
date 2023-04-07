@@ -1,6 +1,6 @@
-PWD c:\Users\BK\OneDrive - Berufskolleg Bonn-Duisdorf\Dokumente\Git\CV
+PWD c:\Users\BK\OneDrive - Berufskolleg Bonn-Duisdorf\Dokumente\Git\CV\LaTeX
 INPUT C:\Users\BK\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\BK\OneDrive - Berufskolleg Bonn-Duisdorf\Dokumente\Git\CV\CV-Schema.tex
+INPUT c:\Users\BK\OneDrive - Berufskolleg Bonn-Duisdorf\Dokumente\Git\CV\LaTeX\CV-Schema.tex
 OUTPUT CV-Schema.log
 INPUT C:\Users\BK\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\BK\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

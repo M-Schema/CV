@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.2)  7 APR 2023 01:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.2)  7 APR 2023 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/BK/OneDrive - Berufskolleg Bonn-Duisdorf/Dokumente/Git/CV/CV-Schema.tex"
-(c:/Users/BK/OneDrive - Berufskolleg Bonn-Duisdorf/Dokumente/Git/CV/CV-Schema.tex
+**"c:/Users/BK/OneDrive - Berufskolleg Bonn-Duisdorf/Dokumente/Git/CV/LaTeX/CV-Schema.tex"
+(c:/Users/BK/OneDrive - Berufskolleg Bonn-Duisdorf/Dokumente/Git/CV/LaTeX/CV-Schema.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-10-26> (C:\Users\BK\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -199,12 +199,12 @@ File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 {C:/Users/BK/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (CV-Schema.aux) ) 
 Here is how much of TeX's memory you used:
  3049 strings out of 475380
- 54699 string characters out of 2778188
+ 54741 string characters out of 2778188
  428504 words of memory out of 3000000
  24412 multiletter control sequences out of 15000+600000
  512633 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,62p,278b,180s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,5n,62p,284b,180s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}{C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}{C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm.enc}{C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qagb.pfb><C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplb.pfb><C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplr.pfb><C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplri.pfb><C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/BK/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on CV-Schema.pdf (1 page, 227791 bytes).
 PDF statistics:
