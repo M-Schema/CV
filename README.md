@@ -1,3 +1,3 @@
 ## Curriculum Vitae
 
-Verschiedene Techniken, einen Lebenslauf darzustellen.
+mein Labenslauf, dargestellt mit verschiedenen Techniken.
