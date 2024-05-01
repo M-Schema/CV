@@ -1,10 +1,8 @@
-html,
 body {
     margin: 0;
-    max-width: 100%;
     display: grid;
     /* zwei-dimensional */
-    grid-template-columns: min-content auto-fill;
+    grid-template-columns: 25% auto;
     grid-template-rows: 1fr auto;
     gap: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -26,9 +24,6 @@ a {
     grid-row: 1 / -1;
     background-color: #004b80;
     color: white;
-    position: inherit;
-    /*height: 100vw;
-    gap: 1.5rem;*/
     align-items: center;
     padding: 2vw;
     margin: 0vw;
@@ -41,45 +36,41 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 15rem;
-    width: 15rem;
+    width: 90%;
     padding: 0vw;
-    /*innerhalb border*/
-    border: 5px solid black;
-    border-radius: 100%;
-    /*außerhalb border*/
 }
 
-#schema{
-    height: 10rem;
-    width: 10rem;
+#schema {
+    height: 15rem;
+    width: 15rem;
+    border: 7px solid black;
+    border-radius: 100%;
 }
 
 .about {
     grid-row: 2 / -1;
-
 }
 
 
 .logo {
-    filter: #000000 saturate(0%) brightness(70%) contrast(1000%);
-    width: 3vw;
+    filter: #000000 saturate(0%) contrast(1000%);
+    background-color: #999999;
+    width: 30%;
 }
 
 
 .contents {
-    /*class*/
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     padding: 2vw;
     color: #000000;
 }
 
-#header{
+#header {
     text-align: right;
 }
 
-.information{
+.information {
     margin: 0vw;
     padding-bottom: 1em;
 }
