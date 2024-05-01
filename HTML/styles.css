@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    max-width: 100%;
+    display: grid;
+    /* zwei-dimensional */
+    grid-template-columns: min-content auto-fill;
+    grid-template-rows: 1fr auto;
+    gap: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+a {
+    text-decoration: underline;
+    color: #009600;
+}
+
+.blue-ribbon {
+    /*id*/
+    grid-column: 1 / 1;
+    grid-row: 1 / -1;
+    background-color: #004b80;
+    color: white;
+    position: inherit;
+    /*height: 100vw;
+    gap: 1.5rem;*/
+    align-items: center;
+    padding: 2vw;
+    margin: 0vw;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.profile-picture {
+    grid-row: 1 / 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15rem;
+    width: 15rem;
+    padding: 0vw;
+    /*innerhalb border*/
+    border: 5px solid black;
+    border-radius: 100%;
+    /*außerhalb border*/
+}
+
+#schema{
+    height: 10rem;
+    width: 10rem;
+}
+
+.about {
+    grid-row: 2 / -1;
+
+}
+
+
+.logo {
+    filter: #000000 saturate(0%) brightness(70%) contrast(1000%);
+    width: 3vw;
+}
+
+
+.contents {
+    /*class*/
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    padding: 2vw;
+    color: #000000;
+}
+
+#header{
+    text-align: right;
+}
+
+.information{
+    margin: 0vw;
+    padding-bottom: 1em;
+}
+
+.bold {
+    font-weight: bold;
+}
